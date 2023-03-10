@@ -1,0 +1,174 @@
+body,html{
+    height: 100%;
+    margin:5px 10px 5px 10px;
+    background-color:rgb(72, 95, 76);
+
+}
+
+.header{
+
+    border-style:solid;
+    border-radius: 3em;
+    border-color:black;
+    text-align:center;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    background-image: url("grass1.jpg");  
+    padding:15px;
+    
+    
+
+}
+
+
+.header h3{
+
+    font-size:22px;
+    display:inline-block;
+    color:white;
+    border-color:red;
+    background-color: #6d6bff;
+    text-shadow: 2px 2px 2px black;
+    padding:10px;
+    border-style:solid;
+    border-width: 3px;
+    box-shadow: 3px 3px 3px 3px black;
+    border-radius:0.5em;
+    
+}
+
+.nv nav {
+    font-size:18px;
+    
+    
+}
+
+.nv nav ul{
+    border-style:solid;
+    border-radius:5em;
+    margin-top:10px;
+    
+    list-style:none;
+    text-align:center;
+    padding:20px;
+    background-color:#005c00;
+    
+    
+}
+
+.nv nav li{
+    display:inline-block;
+    padding:0px 30px 0px 30px;
+    margin:0px 60px 0px 60px;
+    border-style: ridge;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    border-width:5px;
+    border-radius:0.5em;
+    color:white;
+    background-color:#6d6bff;
+    cursor: pointer;
+    
+}
+
+.nv nav li:hover{
+    box-shadow:1px 1px 5px #ffffff;
+}
+
+.nv a{
+    text-decoration: none;
+    color:white;
+    
+}
+
+.text{
+    display:block;
+    text-align:center;
+    margin-top:30px;
+}
+
+.text h2{
+    font-size:30px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.text p{
+    font-size:20px;
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:left;
+    display:inline-block;
+    width:600px;
+    border-style:solid;
+    text-shadow: 2px 2px 2px black;
+    padding:40px;
+    background-color:#679962;
+    color:#f3f3f3;
+    border-radius:50px;
+    box-shadow:1px 1px 10px 2px #ffffff;
+}
+
+.buton input[type=submit]{
+    display:inline-block;
+    position:fixed;
+    bottom:30px;
+    margin-left:30px;
+    margin-bottom:70px;
+    background-color:#005c00;
+    color:white;
+    font-weight: bold;
+    border-style:solid;
+    border-radius:20px;
+    text-shadow: 2px 2px 2px black;
+    clear:both;
+}
+
+.buton input[type=submit]:hover{
+    cursor: pointer;
+    box-shadow:1px 1px 5px #ffffff;
+}
+
+.buton input[type=submit]:active{
+    border-style:none;
+    color:red;
+}
+
+.foot{
+    margin-top:30px;
+    border-top:solid;
+}
+
+.left{
+    float:left;
+    padding:15px;
+    font-size:18px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.right{
+    float:right;
+}
+
+.right ul{
+    list-style: none;
+}
+
+.right li{
+    display:inline-block;
+    padding:15px;
+    margin-right:10px;
+    font-size:18px;
+    
+    text-shadow: 2px 2px 2px black;
+}
+
+.right a{
+    color:white;
+    text-decoration:none;
+}
+
+.right a:hover{
+    color:#ff2e2e;
+}
