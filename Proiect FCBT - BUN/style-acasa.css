@@ -4,6 +4,28 @@ body,html{
     background-color:rgb(72, 95, 76);
 }
 
+
+.img-left
+{
+    float: left; 
+    position: absolute;
+    z-index: 1;
+    margin-top:800px;
+    margin-left:-160px;
+    margin-right:-300px;
+}
+
+.img-right
+{
+    float: right; 
+    position: absolute;
+    right: 0px;
+    margin-top:800px;
+    margin-right:-160px;
+    margin-left:-300px;
+}
+
+
 .gradient-text {
     /* Fallback: Set a background color. */
     background-color: #CA4246;
