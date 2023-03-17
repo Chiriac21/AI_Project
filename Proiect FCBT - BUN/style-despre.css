@@ -308,3 +308,12 @@ body,html{
 .right a:hover{
     color:#ff2e2e;
 }
+/* stilul implicit pentru toate casetele */
+.caseta {
+    display: none;
+  }
+  
+  /* stilul casetei atunci cand subtitlul este selectat */
+  .subtitlu:checked ~ .caseta {
+    display: block;
+  }
