@@ -1,9 +1,56 @@
 body,html{
     height: 100%;
-    margin:5px 10px 5px 10px;
-    background-color:rgb(72, 95, 76);
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 }
 
+.fa {
+    float: right; 
+    position: absolute;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 80px 2px;
+    border-radius: 50%;
+  }
+  
+.fa:hover {
+      color: black;
+      background:white;
+      transition:0.5s;
+}
+
+.fa-facebook {
+    right: 70px;
+    background: #3B5998;
+    color: white;
+    transition: 0.5s;
+}
+
+.fa-instagram {
+    right: 150px;
+    background: #125688;
+    color: white;
+    transition: 0.5s;
+}
+
+.fa-youtube {
+    right: 230px;
+    background: #bb0000;
+    color: white;
+    transition: 0.5s;
+  }
+
+.fa-twitter {
+    right: 310px;
+    background: #55ACEE;
+    color: white;
+    transition: 0.5s;
+}
 
 .img-left
 {
@@ -130,13 +177,13 @@ body,html{
 .header h3 {
     border-top: 5px solid #1375b0;
     font-family: "Open Sans", sans-serif; 
-    font-size: 28px; 
+    font-size: 30px; 
     font-weight: bold; 
     color: white; 
     -webkit-text-stroke: 1.5px rgb(0, 0, 0); 
     text-transform: uppercase; 
     letter-spacing: 4px; 
-    line-height: 1.9; 
+    line-height: 2.7; 
     margin-top: 70px; 
     margin-bottom: 10px; 
     border-bottom: 5px solid #e7282b; 
@@ -153,12 +200,12 @@ body,html{
     -webkit-text-stroke: 1.5px rgb(0, 0, 0); 
     top: 0px;
     left: 0;
-    font-size: 36px;
+    font-size: 40px;
     padding: 25px 35px;
     background-image: linear-gradient(to top, #429ce9 0, #1375b0 100%);
     color: #fff;
     float: left;
-    line-height: 0;
+    line-height: 0.7;
     font-weight: 600;
     clip-path: polygon(0 -1%, 100% -1%, calc(100% - 35px) 100%, 0 100%);
   }
@@ -177,7 +224,7 @@ body,html{
     color: #FFFFFF;
     text-align: center;
     font-size: 28px;
-    padding: 10px 87px 10px 87px;
+    padding: 10px 89.4px 10px 89.4px;
     width: 200px;
     transition: all 0.5s;
     cursor: pointer;
@@ -221,11 +268,10 @@ body,html{
     display:block;
     text-align:center;
     margin-top:30px;
-    
 }
 
 .text h2{
-    font-size:30px;
+    font-size:50px;
     color:white;
     text-shadow: 2px 2px 2px black;
 }
@@ -239,11 +285,10 @@ body,html{
     width:600px;
     border-style:solid;
     text-shadow: 2px 2px 2px black;
-    padding:40px;
+    padding:100px;
     background-color:#679962;
     color:#f3f3f3;
     border-radius:50px;
-    box-shadow:1px 1px 10px 2px #ffffff;
 }
 
 .back-to-top {
