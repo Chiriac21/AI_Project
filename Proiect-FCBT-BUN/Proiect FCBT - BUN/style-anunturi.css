@@ -1,0 +1,240 @@
+
+
+.gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: #CA4246;
+    
+    /* Create the gradient. */
+     background-image: linear-gradient(
+          45deg,
+          #ffffff 16.666%, 
+          #ee0a0a 16.666%, 
+          #f32929 33.333%, 
+          #ed3a3a 33.333%, 
+          #ededed 50%, 
+          #ffffff 50%, 
+          #4255ff 66.666%, 
+          #4a47fc 66.666%, 
+          #0036a9 83.333%, 
+          #2c15ab 83.333%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px rgb(0, 0, 0); 
+    
+    /* Animate the text when loading the element. */
+      /* This animates it on page load and when hovering out. */
+      animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  
+  }
+  
+  .gradient-text:hover{
+      animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+  }
+  
+  
+  /* Move the background and make it smaller. */
+  /* Animation shown when entering the page and after the hover animation. */
+  @keyframes rainbow-text-simple-animation-rev {
+      0% {
+          background-size: 650%;
+      }
+      40% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 100%;
+      }
+  }
+  
+  /* Move the background and make it larger. */
+  /* Animation shown when hovering over the text. */
+  @keyframes rainbow-text-simple-animation {
+      0% {
+          background-size: 100%;
+      }
+      80% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 650%;
+      }
+  }
+
+.header{
+    margin-top: -9px;
+    margin-left: -19px;
+    margin-right: -19px;
+    text-align:center;
+    color:white;
+    background-image: url("grass1.jpg");
+    background-size: cover;  
+    padding:60px;
+}
+
+.header h1{
+    margin-top:180px;
+    font-size: 90px;
+    margin-bottom: 0;
+    margin-bottom: -0.25em;
+    -webkit-transition:0.5s;
+            transition:0.5s;
+    transition-timing-function: ease;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.header h1:hover{
+    font-size:100px;
+    -webkit-transition:0.5s;
+            transition:0.5s;
+    transition-timing-function: ease;
+}
+
+.header h3 {
+    border-top: 5px solid #1375b0;
+    font-family: "Open Sans", sans-serif; 
+    font-size: 28px; 
+    font-weight: bold; 
+    color: white; 
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0); 
+    text-transform: uppercase; 
+    letter-spacing: 4px; 
+    line-height: 1.9; 
+    margin-top: 70px; 
+    margin-bottom: 10px; 
+    border-bottom: 5px solid #e7282b; 
+    background-color: #272b87;
+    width: 100%;
+    float: none;
+    display: flex;
+  }
+  
+.header h3::before {
+    content: "FCBT";
+    display: block;
+    position: relative;
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0); 
+    top: 0px;
+    left: 0;
+    font-size: 36px;
+    padding: 25px 35px;
+    background-image: linear-gradient(to top, #429ce9 0, #1375b0 100%);
+    color: #fff;
+    float: left;
+    line-height: 0;
+    font-weight: 600;
+    clip-path: polygon(0 -1%, 100% -1%, calc(100% - 35px) 100%, 0 100%);
+  }
+
+
+.text{
+    display:block;
+    text-align:center;
+    margin-top:30px;
+}
+
+.text h2{
+    font-size:30px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.text p{
+    font-size:20px;
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:left;
+    display:inline-block;
+    width:850px;
+    border-style:solid;
+    text-shadow: 2px 2px 2px black;
+    padding:40px;
+    background-color:#679962;
+    color:#f3f3f3;
+    border-radius:50px;
+    box-shadow:1px 1px 10px 2px #ffffff;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #f4511e;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+.back-to-top:hover {
+    opacity: 0.8;
+  }
+  
+.arrow-up {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    transform: rotate(-225deg);
+    margin: 17px auto 0;
+    position: relative;
+  }
+  
+  @media only screen and (min-height: 600px) {
+    .back-to-top {
+      display: block;
+    }
+  }
+
+.foot{
+    margin-top:30px;
+    border-top:solid;
+}
+
+.left{
+    float:left;
+    padding:15px;
+    font-size:18px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.right{
+    float:right;
+}
+
+.right ul{
+    list-style: none;
+}
+
+.right li{
+    display:inline-block;
+    padding:15px;
+    margin-right:10px;
+    font-size:18px;
+    
+    text-shadow: 2px 2px 2px black;
+}
+
+.right a{
+    color:white;
+    text-decoration:none;
+}
+
+.right a:hover{
+    color:#ff2e2e;
+}
