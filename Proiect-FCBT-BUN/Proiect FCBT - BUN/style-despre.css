@@ -378,10 +378,19 @@ body,html{
 .footer-toggle-show:target {
   display: none;
 }
-
 .footer-toggle-show:target + .footer-toggle-hide,
 .footer-toggle-show:target ~ .footer-details {
   display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-header 
+{
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
 }
 
 .footer-toggle-show:after,

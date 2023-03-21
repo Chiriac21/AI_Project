@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body,html{
-    height: 100%;
-    background-color:rgb(72, 95, 76);
+    height: auto;
+    background: rgb(230,44,47);
+    background: linear-gradient(52deg, rgba(230,44,47,1) 0%, rgba(43,47,134,1) 100%);
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
