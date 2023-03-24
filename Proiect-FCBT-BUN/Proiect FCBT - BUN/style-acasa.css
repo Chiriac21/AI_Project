@@ -1,4 +1,10 @@
-
+body
+{
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
 
 .img-left
 {
@@ -16,6 +22,7 @@
     position: absolute;
     right: 0px;
     margin-top:800px;
+    
     margin-right:-160px;
     margin-left:-300px;
 }
@@ -91,17 +98,15 @@
 
 .header{
     margin-top: -9px;
-    margin-left: -19px;
-    margin-right: -19px;
     text-align:center;
     color:white;
-    background-image: url("grass1.jpg");
+    background-image: url("back.jpg");
     background-size: cover;  
     padding:60px;
 }
 
 .header h1{
-    margin-top:180px;
+    margin-top:120px;
     font-size: 90px;
     margin-bottom: 0;
     margin-bottom: -0.25em;
@@ -132,7 +137,7 @@
     text-transform: uppercase; 
     letter-spacing: 4px; 
     line-height: 2.9; 
-    margin-top: 70px; 
+    margin-top: 130px; 
     margin-bottom: 10px; 
     border-bottom: 5px solid #e7282b; 
     background-color: #272b87;
@@ -236,25 +241,23 @@
 }
 
 .text h2{
-    font-size:30px;
+    font-size:40px;
     color:white;
     text-shadow: 2px 2px 2px black;
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 .text p{
-    font-size:20px;
+    font-size:22px;
     line-height: 30px;
     font-family: 'Times New Roman', Times, serif;
-    text-align:left;
-    display:inline-block;
-    width:600px;
-    border-style:solid;
+    text-align: justify;
     text-shadow: 2px 2px 2px black;
-    padding:40px;
-    background-color:#679962;
     color:#f3f3f3;
-    border-radius:50px;
-    box-shadow:1px 1px 10px 2px #ffffff;
+    display:inline-block;
+    width:700px;
+    padding:40px;
 }
 
 .back-to-top {
@@ -293,8 +296,11 @@
   
 
 .foot{
-    margin-top:30px;
+    margin-top:50px;
     border-top:solid;
+    border-color: white;
+    height:93px;
+    background-color: rgb(1, 0, 39);
 }
 
 .left{
