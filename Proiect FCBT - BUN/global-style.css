@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body,html{
     height: 100%;
-    background-image: url("back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .fa {
@@ -19,7 +17,7 @@ body,html{
     width: 30px;
     text-align: center;
     text-decoration: none;
-    margin: 80px 2px;
+    margin: 140px 5px;
     border-radius: 50%;
   }
   
@@ -84,7 +82,6 @@ body,html{
     margin-left: -3px;
     margin-right: -3px;
     margin-top: -20px;
-    
 }
 .nv 
 {

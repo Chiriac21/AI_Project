@@ -68,19 +68,17 @@
       }
   }
 
-.header{
+  .header{
     margin-top: -9px;
-    margin-left: -19px;
-    margin-right: -19px;
     text-align:center;
     color:white;
-    background-image: url("grass1.jpg");
+    background-image: url("back.jpg");
     background-size: cover;  
     padding:60px;
 }
 
 .header h1{
-    margin-top:180px;
+    margin-top:120px;
     font-size: 90px;
     margin-bottom: 0;
     margin-bottom: -0.25em;
@@ -111,7 +109,7 @@
     text-transform: uppercase; 
     letter-spacing: 4px; 
     line-height: 2.9; 
-    margin-top: 70px; 
+    margin-top: 130px; 
     margin-bottom: 10px; 
     border-bottom: 5px solid #e7282b; 
     background-color: #272b87;
