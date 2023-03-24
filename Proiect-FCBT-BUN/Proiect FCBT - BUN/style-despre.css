@@ -114,7 +114,7 @@ body,html{
     -webkit-text-stroke: 1.5px rgb(0, 0, 0); 
     text-transform: uppercase; 
     letter-spacing: 4px; 
-    line-height: 1.9; 
+    line-height: 2.9; 
     margin-top: 70px; 
     margin-bottom: 10px; 
     border-bottom: 5px solid #e7282b; 
@@ -136,13 +136,13 @@ body,html{
     background-image: linear-gradient(to top, #429ce9 0, #1375b0 100%);
     color: #fff;
     float: left;
-    line-height: 0;
+    line-height: 0.9;
     font-weight: 600;
     clip-path: polygon(0 -1%, 100% -1%, calc(100% - 35px) 100%, 0 100%);
   }
 
 
-.nv nav {
+/* .nv nav {
     font-size:18px;
     
     
@@ -172,6 +172,8 @@ body,html{
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    border: 2px solid red;
+
   }
   
   .nv nav li span:after {
@@ -195,7 +197,7 @@ body,html{
     text-decoration: none;
     color:white;
     
-}
+} */
 
 .text{
     display:block;
@@ -355,7 +357,7 @@ body,html{
 .footer-toggle-hide {
   display: block;
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 5px;
   font-size: 2.5rem;
 
@@ -366,11 +368,11 @@ body,html{
     object-fit: contain;
 }
 .footer-toggle-show:hover{
-    color: white;
+    color: gray;
     transition: all 0.5s ease
 }
 .footer-toggle-hide:hover{
-    color: white;
+    color: gray;
     transition: all 0.5s ease
 }
 .footer-details,
@@ -378,19 +380,13 @@ body,html{
 .footer-toggle-show:target {
   display: none;
 }
+
 .footer-toggle-show:target + .footer-toggle-hide,
 .footer-toggle-show:target ~ .footer-details {
-  display: block;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-.text-header 
-{
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: flex-start !important;
+  justify-content: center;
 }
 
 .footer-toggle-show:after,
@@ -402,4 +398,10 @@ body,html{
   transform: rotate(45deg) scale(1.09);
 }
 
-
+.text-header 
+{
+    text-align: left;
+    flex-direction: row !important;
+    align-items: space-between !important;
+    justify-content: space-between !important;
+}
