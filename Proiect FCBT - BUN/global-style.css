@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body,html{
+    height: 100%;
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fa {
+    float: right; 
+    position: absolute;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 80px 2px;
+    border-radius: 50%;
+  }
+  
+.fa:hover {
+      color: black;
+      background:white;
+      transition:0.5s;
+}
+
+.fa-facebook {
+    right: 70px;
+    background: #3B5998;
+    color: white;
+    transition: 0.5s;
+}
+
+.fa-instagram {
+    right: 150px;
+    background: #125688;
+    color: white;
+    transition: 0.5s;
+}
+
+.fa-youtube {
+    right: 230px;
+    background: #bb0000;
+    color: white;
+    transition: 0.5s;
+  }
+
+.fa-twitter {
+    right: 310px;
+    background: #55ACEE;
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+.gradient-text 
+{
+    font-family: none;
+}
+/* Navbar */
+.nv nav {
+    font-size:18px;
+}
+
+
+
+.nv nav li{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: 4px solid black;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px 0px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: -3px;
+    margin-right: -3px;
+    margin-top: -20px;
+    
+}
+.nv 
+{
+    width: 100%;
+}
+
+.nv ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+.nv ul a{
+    width: 20%;
+}
+.nv ul a li {
+    width: 100%;
+}
+
+/* @media screen and (max-width: 1000px) {
+.nv nav li{
+    font-size: 15px;
+}
+} */
+
+.nv nav li span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.nv nav li span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.nv nav li:hover span {
+    padding-right: 25px;
+}
+  
+.nv nav li:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.nv a{
+    text-decoration: none;
+    color:white;
+}

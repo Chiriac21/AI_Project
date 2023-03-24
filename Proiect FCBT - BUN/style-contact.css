@@ -1,9 +1,4 @@
-body,html{
-    height: 100%;
-    margin:5px 10px 5px 10px;
-    background-color:rgb(72, 95, 76);
 
-}
 
 .gradient-text {
     /* Fallback: Set a background color. */
@@ -115,7 +110,7 @@ body,html{
     -webkit-text-stroke: 1.5px rgb(0, 0, 0); 
     text-transform: uppercase; 
     letter-spacing: 4px; 
-    line-height: 1.9; 
+    line-height: 2.9; 
     margin-top: 70px; 
     margin-bottom: 10px; 
     border-bottom: 5px solid #e7282b; 
@@ -137,7 +132,7 @@ body,html{
     background-image: linear-gradient(to top, #429ce9 0, #1375b0 100%);
     color: #fff;
     float: left;
-    line-height: 0;
+    line-height: 0.9;
     font-weight: 600;
     clip-path: polygon(0 -1%, 100% -1%, calc(100% - 35px) 100%, 0 100%);
   }

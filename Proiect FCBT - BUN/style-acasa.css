@@ -1,56 +1,4 @@
-body,html{
-    height: 100%;
-    background-image: url("back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-}
 
-.fa {
-    float: right; 
-    position: absolute;
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 80px 2px;
-    border-radius: 50%;
-  }
-  
-.fa:hover {
-      color: black;
-      background:white;
-      transition:0.5s;
-}
-
-.fa-facebook {
-    right: 70px;
-    background: #3B5998;
-    color: white;
-    transition: 0.5s;
-}
-
-.fa-instagram {
-    right: 150px;
-    background: #125688;
-    color: white;
-    transition: 0.5s;
-}
-
-.fa-youtube {
-    right: 230px;
-    background: #bb0000;
-    color: white;
-    transition: 0.5s;
-  }
-
-.fa-twitter {
-    right: 310px;
-    background: #55ACEE;
-    color: white;
-    transition: 0.5s;
-}
 
 .img-left
 {
@@ -177,13 +125,13 @@ body,html{
 .header h3 {
     border-top: 5px solid #1375b0;
     font-family: "Open Sans", sans-serif; 
-    font-size: 30px; 
+    font-size: 28px; 
     font-weight: bold; 
     color: white; 
     -webkit-text-stroke: 1.5px rgb(0, 0, 0); 
     text-transform: uppercase; 
     letter-spacing: 4px; 
-    line-height: 2.7; 
+    line-height: 2.9; 
     margin-top: 70px; 
     margin-bottom: 10px; 
     border-bottom: 5px solid #e7282b; 
@@ -200,17 +148,18 @@ body,html{
     -webkit-text-stroke: 1.5px rgb(0, 0, 0); 
     top: 0px;
     left: 0;
-    font-size: 40px;
+    font-size: 36px;
     padding: 25px 35px;
     background-image: linear-gradient(to top, #429ce9 0, #1375b0 100%);
     color: #fff;
     float: left;
-    line-height: 0.7;
+    line-height: 0.9;
     font-weight: 600;
     clip-path: polygon(0 -1%, 100% -1%, calc(100% - 35px) 100%, 0 100%);
   }
 
-.nv nav {
+/* Navbar */
+/* .nv nav {
     font-size:18px;
 }
 
@@ -224,46 +173,62 @@ body,html{
     color: #FFFFFF;
     text-align: center;
     font-size: 28px;
-    padding: 10px 89.4px 10px 89.4px;
-    width: 200px;
+    padding: 10px 0px;
     transition: all 0.5s;
     cursor: pointer;
     margin-left: -3px;
     margin-right: -3px;
     margin-top: -20px;
-
     
 }
+.nv 
+{
+    width: 100%;
+}
+
+.nv ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+.nv ul a{
+    width: 20%;
+}
+.nv ul a li {
+    width: 100%;
+}
+
 .nv nav li span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
+}
   
-  .nv nav li span:after {
+.nv nav li span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
+}
   
-  .nv nav li:hover span {
+.nv nav li:hover span {
     padding-right: 25px;
-  }
+}
   
-  .nv nav li:hover span:after {
+.nv nav li:hover span:after {
     opacity: 1;
     right: 0;
-  }
+}
 .nv a{
     text-decoration: none;
     color:white;
-    
-}
-
+} */
+/* End of nav bar */
 .text{
     display:block;
     text-align:center;
@@ -271,7 +236,7 @@ body,html{
 }
 
 .text h2{
-    font-size:50px;
+    font-size:30px;
     color:white;
     text-shadow: 2px 2px 2px black;
 }
@@ -285,10 +250,11 @@ body,html{
     width:600px;
     border-style:solid;
     text-shadow: 2px 2px 2px black;
-    padding:100px;
+    padding:40px;
     background-color:#679962;
     color:#f3f3f3;
     border-radius:50px;
+    box-shadow:1px 1px 10px 2px #ffffff;
 }
 
 .back-to-top {

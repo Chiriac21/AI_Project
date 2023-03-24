@@ -1,6 +1,5 @@
 body,html{
     height: 100%;
-    margin:5px 10px 5px 10px;
     background-color:rgb(72, 95, 76);
 
 }
@@ -115,7 +114,7 @@ body,html{
     -webkit-text-stroke: 1.5px rgb(0, 0, 0); 
     text-transform: uppercase; 
     letter-spacing: 4px; 
-    line-height: 1.9; 
+    line-height: 2.9; 
     margin-top: 70px; 
     margin-bottom: 10px; 
     border-bottom: 5px solid #e7282b; 
@@ -137,7 +136,7 @@ body,html{
     background-image: linear-gradient(to top, #429ce9 0, #1375b0 100%);
     color: #fff;
     float: left;
-    line-height: 0;
+    line-height: 0.9;
     font-weight: 600;
     clip-path: polygon(0 -1%, 100% -1%, calc(100% - 35px) 100%, 0 100%);
   }
@@ -148,7 +147,6 @@ body,html{
     
     
 }
-
 
 
 .nv nav li{
@@ -201,10 +199,35 @@ body,html{
 
 .text{
     display:block;
-    text-align:center;
     margin-top:30px;
-    width:850px;
+    width: 80vw;
     margin:0 auto;
+}
+.text h2 
+{
+    text-align: center;
+    transform: translateX(-100%);
+    animation: move-into-place 2s ease;
+    animation-fill-mode: forwards;
+}
+@keyframes move-into-place {
+    from{
+        transform: translateX(-100%);
+
+    }
+    to{
+        transform: translateX(0%);
+
+    }
+}
+.item-container
+{
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+.item-container input 
+{
+    margin-left: 40%;
 }
 
 .text h2{
@@ -308,3 +331,66 @@ body,html{
 .right a:hover{
     color:#ff2e2e;
 }
+/* stilul implicit pentru toate casetele */
+.caseta {
+    /* display: none; */
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+/* stilul casetei atunci cand subtitlul este selectat */
+.subtitlu:checked ~ .caseta {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TEST*/
+.footer-toggle-show,
+.footer-toggle-hide {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  font-size: 2.5rem;
+
+}
+.footer-toggle-show img 
+{
+    height: 20px;
+    object-fit: contain;
+}
+.footer-toggle-show:hover{
+    color: white;
+    transition: all 0.5s ease
+}
+.footer-toggle-hide:hover{
+    color: white;
+    transition: all 0.5s ease
+}
+.footer-details,
+.footer-toggle-hide,
+.footer-toggle-show:target {
+  display: none;
+}
+
+.footer-toggle-show:target + .footer-toggle-hide,
+.footer-toggle-show:target ~ .footer-details {
+  display: block;
+}
+
+.footer-toggle-show:after,
+.footer-toggle-hide:after {
+  float: right;
+  content: "+";
+}
+.footer-toggle-hide:after {
+  transform: rotate(45deg) scale(1.09);
+}
+
+
