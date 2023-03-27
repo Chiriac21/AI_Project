@@ -302,3 +302,61 @@
 .right a:hover{
     color:#ff2e2e;
 }
+
+
+.contact-container
+{
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-container-title
+{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+.contact-container-items
+{
+    display: flex;
+    min-height: 200px;
+}
+.contact-container-items-section
+{
+    width: 50%;
+    padding: 20px;
+}
+.contact-container-items-section-item
+{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.contact-container-items-section-item img 
+{
+    height: 30px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+.contact-container-items-section-item span 
+{
+
+}
+.contact-container-items-section-item input 
+{
+    width: 90%;
+    padding: 10px;
+}
+.contact-container-items-section-item textarea 
+{
+    height: 200px;
+    width: 90%;
+    padding: 10px;
+
+}
