@@ -1,15 +1,60 @@
-body{
-    background: rgb(39,43,135);
-    background: linear-gradient(176deg, rgba(39,43,135,1) 0%, rgba(231,40,43,1) 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body,html{
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-
+    position: relative;
+    overflow-x: hidden;
 }
+
+.fa {
+    float: right; 
+    position: absolute;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 140px 5px;
+    border-radius: 50%;
+  }
+  
+.fa:hover {
+      color: black;
+      background:white;
+      transition:0.5s;
+}
+
+.fa-facebook {
+    right: 70px;
+    background: #3B5998;
+    color: white;
+    transition: 0.5s;
+}
+
+.fa-instagram {
+    right: 150px;
+    background: #125688;
+    color: white;
+    transition: 0.5s;
+}
+
+.fa-youtube {
+    right: 230px;
+    background: #bb0000;
+    color: white;
+    transition: 0.5s;
+  }
+
+.fa-twitter {
+    right: 310px;
+    background: #55ACEE;
+    color: white;
+    transition: 0.5s;
+}
+
+
 
 .gradient-text {
     /* Fallback: Set a background color. */
@@ -79,11 +124,11 @@ body{
       }
   }
 
-  .header{
+.header{
     margin-top: -9px;
     text-align:center;
     color:white;
-    background-image: url("images/back.jpg");
+    background-image: url("/images/back.jpg");
     background-size: cover;  
     padding:60px;
 }
@@ -96,7 +141,7 @@ body{
     -webkit-transition:0.5s;
             transition:0.5s;
     transition-timing-function: ease;
-    font-weight: bold;
+    font-weight: 700;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -145,14 +190,11 @@ body{
     font-weight: 600;
     clip-path: polygon(0 -1%, 100% -1%, calc(100% - 35px) 100%, 0 100%);
   }
-
+  
+/* Navbar */
 .nv nav {
     font-size:18px;
-    
-    
 }
-
-
 
 .nv nav li{
     display: inline-block;
@@ -162,212 +204,58 @@ body{
     color: #FFFFFF;
     text-align: center;
     font-size: 28px;
-    padding: 10px 87px 10px 87px;
-    width: 200px;
+    padding: 10px 0px;
     transition: all 0.5s;
     cursor: pointer;
     margin-left: -3px;
     margin-right: -3px;
     margin-top: -20px;
-
-    
 }
+.nv 
+{
+    width: 100%;
+}
+
+.nv ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+.nv ul a{
+    width: 20%;
+}
+.nv ul a li {
+    width: 100%;
+}
+
+
 .nv nav li span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
+}
   
-  .nv nav li span:after {
+.nv nav li span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
+}
   
-  .nv nav li:hover span {
+.nv nav li:hover span {
     padding-right: 25px;
-  }
+}
   
-  .nv nav li:hover span:after {
+.nv nav li:hover span:after {
     opacity: 1;
     right: 0;
-  }
+}
 .nv a{
     text-decoration: none;
     color:white;
-    
-}
-
-.text{
-    display:block;
-    text-align:center;
-    margin-top:30px;
-}
-
-.text h2{
-    font-size:30px;
-    color:white;
-    text-shadow: 2px 2px 2px black;
-}
-
-.text p{
-    font-size:20px;
-    line-height: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align:left;
-    display:inline-block;
-    width:850px;
-    
-    text-shadow: 2px 2px 2px black;
-    padding:40px;
-    /* background-color:#679962; */
-    color:#f3f3f3;
-    
-    border: 2px solid gray;
-    -webkit-box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.61); 
-    box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.61);
-    border-radius: 10px;
-    
-}
-.text p:hover{
-    border: 2px solid rgb(73, 73, 73);
-    transition: all 0.3s ease;
-}
-
-.back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #f4511e;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: opacity 0.2s ease-in-out;
-  }
-  
-.back-to-top:hover {
-    opacity: 0.8;
-  }
-  
-.arrow-up {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 4px solid #fff;
-    border-left: 4px solid #fff;
-    transform: rotate(-225deg);
-    margin: 17px auto 0;
-    position: relative;
-  }
-  
-  @media only screen and (min-height: 600px) {
-    .back-to-top {
-      display: block;
-    }
-  }
-  
-.foot{
-    margin-top:50px;
-    border-top:solid;
-    border-color: white;
-    height:93px;
-    background-color: rgb(1, 0, 39);
-}
-
-.left{
-    float:left;
-    padding:15px;
-    font-size:18px;
-    color:white;
-    text-shadow: 2px 2px 2px black;
-}
-
-.right{
-    float:right;
-}
-
-.right ul{
-    list-style: none;
-}
-
-.right li{
-    display:inline-block;
-    padding:15px;
-    margin-right:10px;
-    font-size:18px;
-    
-    text-shadow: 2px 2px 2px black;
-}
-
-.right a{
-    color:white;
-    text-decoration:none;
-}
-
-.right a:hover{
-    color:#ff2e2e;
-}
-
-
-.contact-container
-{
-    padding: 20px;
-    margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-.contact-container-title
-{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-}
-.contact-container-items
-{
-    display: flex;
-    min-height: 200px;
-}
-.contact-container-items-section
-{
-    width: 50%;
-    padding: 20px;
-}
-.contact-container-items-section-item
-{
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    margin-bottom: 20px;
-}
-.contact-container-items-section-item img 
-{
-    height: 30px;
-    object-fit: contain;
-    margin-right: 20px;
-}
-.contact-container-items-section-item span 
-{
-
-}
-.contact-container-items-section-item input 
-{
-    width: 90%;
-    padding: 10px;
-}
-.contact-container-items-section-item textarea 
-{
-    height: 200px;
-    width: 90%;
-    padding: 10px;
-
 }

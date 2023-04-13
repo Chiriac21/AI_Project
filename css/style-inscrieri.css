@@ -1,0 +1,188 @@
+body::after
+{
+    margin:0 auto;
+    background-image: url("/images/sigla.png");
+    background-repeat:no-repeat;
+    background-size:1200px 1500px;
+    background-position:40px 850px;
+    content:"";
+    opacity:0.3;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    position:absolute;
+    z-index:-1;
+    width:1300px;
+    height:2400px;
+}
+
+.form-actions {
+    text-align: center;
+  }
+
+button[type="submit"],
+button[type="reset"] {
+  background-color: #fa0505;
+  background-image: linear-gradient(to top, rgba(0, 4, 223, 0.658), transparent);
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+  width: 12%;
+  display: inline-block;
+  font-size: 20px;
+  margin: 50px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #000000;
+}
+
+.text{
+    display:block;
+    text-align:center;
+    margin-top:30px;
+    
+}
+
+.text h2{
+    font-size:40px;
+    color:rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.text p{
+    font-size:22px;
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:justify;
+    display:inline-block;
+    font-weight: bold;
+    width:95%;
+
+    padding:40px;
+    
+    color:#000000;
+    
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #f4511e;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+.back-to-top:hover {
+    opacity: 0.8;
+  }
+  
+.arrow-up {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    transform: rotate(-225deg);
+    margin: 17px auto 0;
+    position: relative;
+  }
+  
+  @media only screen and (min-height: 600px) {
+    .back-to-top {
+      display: block;
+    }
+  }
+
+color
+{
+    font-size: 18px;
+    color:red;
+}
+
+table{
+    font-size:20px;
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    display:inline-block;
+    position: center;
+    width:535px;
+    border-style:solid;
+    border-color:rgb(0, 0, 0);
+    border-width: 10px;
+    border-radius: 0.5em;
+    padding:20px;
+    color:black;
+}
+
+table tr td{
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+}
+
+table tr th{
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+}
+
+.linie{
+    display:inline-block;
+    padding:10px;
+}
+
+.foot{
+    margin-top:150px;
+    border-top:solid;
+    height:93px;
+    background-color: rgb(1, 0, 39);
+}
+
+.left{
+    float:left;
+    padding:15px;
+    font-size:18px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.right{
+    float:right;
+}
+
+.right ul{
+    list-style: none;
+}
+
+.right li{
+    display:inline-block;
+    padding:15px;
+    margin-right:10px;
+    font-size:18px;
+    
+    text-shadow: 2px 2px 2px black;
+}
+
+.right a{
+    color:white;
+    text-decoration:none;
+}
+
+.right a:hover{
+    color:#ff2e2e;
+}

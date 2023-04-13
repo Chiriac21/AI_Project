@@ -1,0 +1,132 @@
+body
+{
+    background-image: url("/images/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.img-left
+{
+    float: left; 
+    position: absolute;
+    z-index: 1;
+    margin-top:800px;
+    margin-left:-160px;
+    margin-right:-300px;
+}
+
+.img-right
+{
+    float: right; 
+    position: absolute;
+    right: 0px;
+    margin-top:800px;
+    
+    margin-right:-160px;
+    margin-left:-300px;
+}
+
+
+.text{
+    display:block;
+    text-align:center;
+    margin-top:30px;
+}
+
+.text h2{
+    font-size:40px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.text p{
+    font-size:22px;
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    text-shadow: 2px 2px 2px black;
+    color:#f3f3f3;
+    display:inline-block;
+    width:700px;
+    padding:40px;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #f4511e;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+.back-to-top:hover {
+    opacity: 0.8;
+  }
+  
+.arrow-up {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    transform: rotate(-225deg);
+    margin: 17px auto 0;
+    position: relative;
+  }
+  
+  @media only screen and (min-height: 600px) {
+    .back-to-top {
+      display: block;
+    }
+  }
+  
+
+.foot{
+    margin-top:50px;
+    border-top:solid;
+    border-color: white;
+    height:93px;
+    background-color: rgb(1, 0, 39);
+}
+
+.left{
+    float:left;
+    padding:15px;
+    font-size:18px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.right{
+    float:right;
+}
+
+.right ul{
+    list-style: none;
+}
+
+.right li{
+    display:inline-block;
+    padding:15px;
+    margin-right:10px;
+    font-size:18px;
+    
+    text-shadow: 2px 2px 2px black;
+}
+
+.right a{
+    color:white;
+    text-decoration:none;
+}
+
+.right a:hover{
+    color:#ff2e2e;
+}
