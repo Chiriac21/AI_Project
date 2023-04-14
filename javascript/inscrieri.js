@@ -1,3 +1,20 @@
+
+const submitBtn = document.getElementById("submitBtn");
+const popup = document.getElementById("popup");
+const closeBtn = document.getElementById("close-btn");
+
+submitBtn.addEventListener("click", () => {
+  popup.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+
+function showUser() {
+}
+
 function takeForm() {
     let nume = document.getElementById("nume").value;
     let prenume = document.getElementById("prenume").value;

@@ -1,6 +1,6 @@
 body
 {
-    background-image: url("/images/back.jpg");
+    background-image: url("../images/back.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
@@ -54,33 +54,44 @@ body
     padding:40px;
 }
 
-.back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+#top {
+    display: inline-block;
+    background-color: #FF9800;
     width: 50px;
     height: 50px;
-    background-color: #f4511e;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: opacity 0.2s ease-in-out;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+
+  #top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #top:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #top:active {
+    background-color: #555;
+  }
+  #top.show {
+    opacity: 1;
+    visibility: visible;
   }
   
-.back-to-top:hover {
-    opacity: 0.8;
-  }
-  
-.arrow-up {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 4px solid #fff;
-    border-left: 4px solid #fff;
-    transform: rotate(-225deg);
-    margin: 17px auto 0;
-    position: relative;
-  }
   
   @media only screen and (min-height: 600px) {
     .back-to-top {

@@ -1,7 +1,7 @@
 body::after
 {
     margin:0 auto;
-    background-image: url("/images/sigla.png");
+    background-image: url("../images/sigla.png");
     background-repeat:no-repeat;
     background-size:1200px 1500px;
     background-position:40px 850px;
@@ -20,6 +20,7 @@ body::after
 .form-actions {
     text-align: center;
   }
+
 
 button[type="submit"],
 button[type="reset"] {
