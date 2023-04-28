@@ -22,7 +22,7 @@ if(isset($_POST['submit']))
     $host = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "proiect";
+    $dbname = "gabi";
 
 // creating a connection
 $conn = mysqli_connect($host, $username, $password, $dbname);

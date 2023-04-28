@@ -168,40 +168,6 @@ table tr th{
     box-shadow:1px 1px 10px 2px #ffffff;
 }
 
-.back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #f4511e;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: opacity 0.2s ease-in-out;
-  }
-  
-.back-to-top:hover {
-    opacity: 0.8;
-  }
-  
-.arrow-up {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 4px solid #fff;
-    border-left: 4px solid #fff;
-    transform: rotate(-225deg);
-    margin: 17px auto 0;
-    position: relative;
-  }
-  
-  @media only screen and (min-height: 600px) {
-    .back-to-top {
-      display: block;
-    }
-  }
-
 .foot{
     margin-top:50px;
     border-top:solid;

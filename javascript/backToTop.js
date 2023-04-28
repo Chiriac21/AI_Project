@@ -1,17 +1,33 @@
 var btn = document.getElementById("top");
 
-btn.classList.add('show');
+var body = document.body,
+    html = document.documentElement;
+
+var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+
 window.addEventListener('scroll', function() {
-  if (btn.offsetTop > 300) {
+  console.log(height);
+  console.log(document.body.scrollTop)
+  if (document.body.scrollTop > 400) {
     btn.classList.add('show');
   } else {
     btn.classList.remove('show');
   }
-});
+  if(document.body.scrollTop > 1933)
+  {
+    btn.classList.add('stop');
+  } else {
+    btn.classList.remove('stop');
+  }
+}, {capture: true});
+
 
 btn.addEventListener('click', function(e) {
-    console.log(btn.offsetTop)
-  e.preventDefault(btn.offsetTop);
-  document.documentElement.animate({scrollTop:0}, '300');
-  document.body.animate({scrollTop:0}, '300');
+
+  e.preventDefault(document.body.scrollTop);
+  document.body.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });
