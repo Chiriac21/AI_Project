@@ -6,15 +6,17 @@ var body = document.body,
 var height = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
 
+console.log(new Date().getHours() + " " + new Date().getMinutes());
+
 window.addEventListener('scroll', function() {
-  console.log(height);
+  console.log(height-1000);
   console.log(document.body.scrollTop)
   if (document.body.scrollTop > 400) {
     btn.classList.add('show');
   } else {
     btn.classList.remove('show');
   }
-  if(document.body.scrollTop > 1933)
+  if(document.body.scrollTop > height - 1000)
   {
     btn.classList.add('stop');
   } else {

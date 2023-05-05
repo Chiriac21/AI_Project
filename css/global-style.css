@@ -54,7 +54,15 @@ body,html{
     transition: 0.5s;
 }
 
-
+date{
+    width: 45%;
+    color: #17D4FE;
+    font-size: 28px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+    text-decoration: none;
+    -webkit-text-stroke: 0px rgb(255, 0, 0);;
+}
 
 .gradient-text {
     /* Fallback: Set a background color. */
