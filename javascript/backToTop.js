@@ -1,3 +1,26 @@
+// reveal animation on scroll
+function reveal() {
+    console.log("scroll")
+    var reveals = document.querySelectorAll(".reveal");
+    console.log("reveals:", reveals)
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+        } else {
+        reveals[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", reveal);
+
+
+// old logic
 var btn = document.getElementById("top");
 
 var body = document.body,
@@ -8,7 +31,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 
 console.log(new Date().getHours() + " " + new Date().getMinutes());
 
-window.addEventListener('scroll', function() {
+function topBtn() {
   console.log(height-1000);
   console.log(document.body.scrollTop)
   if (document.body.scrollTop > 400) {
@@ -22,6 +45,10 @@ window.addEventListener('scroll', function() {
   } else {
     btn.classList.remove('stop');
   }
+}
+window.addEventListener('scroll', ()=>{
+  topBtn();
+  reveal();
 }, {capture: true});
 
 
