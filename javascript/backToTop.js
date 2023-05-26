@@ -29,7 +29,7 @@ var body = document.body,
 var height = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
 
-console.log(new Date().getHours() + " " + new Date().getMinutes());
+//console.log(new Date().getHours() + " " + new Date().getMinutes());
 
 function topBtn() {
   console.log(height-1000);
